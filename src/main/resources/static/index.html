@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Finanças Mensais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Organizador de Finanças</h1>
+
+    <section>
+        <h2>Adicionar Receita</h2>
+        <input type="text" id="descricaoReceita" placeholder="Descrição">
+        <input type="number" id="valorReceita" placeholder="Valor">
+        <input type="date" id="dataReceita">
+        <button onclick="adicionarReceita()">Adicionar</button>
+    </section>
+
+    <section>
+        <h2>Adicionar Despesa</h2>
+        <input type="text" id="descricaoDespesa" placeholder="Descrição">
+        <input type="number" id="valorDespesa" placeholder="Valor">
+        <input type="date" id="dataDespesa">
+        <button onclick="adicionarDespesa()">Adicionar</button>
+    </section>
+
+    <section>
+        <h2>Visualizar Saldo</h2>
+        <label>Data Início: <input type="date" id="inicioSaldo"></label>
+        <label>Data Fim: <input type="date" id="fimSaldo"></label>
+        <button onclick="consultarSaldo()">Calcular Saldo</button>
+        <p id="resultadoSaldo"></p>
+    </section>
+
+    <section>
+        <h2>Listar Receitas e Despesas</h2>
+        <label>Data Início: <input type="date" id="inicioListagem"></label>
+        <label>Data Fim: <input type="date" id="fimListagem"></label>
+        <button onclick="listarMovimentos()">Listar</button>
+        <div id="listaMovimentos"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
